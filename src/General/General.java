@@ -1,4 +1,4 @@
-package Main;
+package General;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -8,7 +8,7 @@ import javax.swing.Timer;
 
 import Display.Display;
 
-public class Main {
+public class General {
 	public static void main(String[] args){
 		Display.create(800, 600, "Game", 0xff00ff00);
 		Timer t= new Timer(1000 / 60, new ActionListener() {
