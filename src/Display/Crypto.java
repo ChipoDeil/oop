@@ -3,8 +3,18 @@ package testing;
 import java.util.ArrayList;
 
 public class Crypto {
-	public final int start = 1040;
-	public final int end = 1103;
+	private int start = 1040;
+	private int end = 1103;
+
+	public Crypto(){
+	}
+	
+	public Crypto(int start, int end){
+		this.start = start;
+		this.end = end;
+		
+	}
+	
 	public String cryptCaesar(String text, int shift){
 		String result = "";
 		int difference = end - start;
@@ -66,5 +76,4 @@ public class Crypto {
 			ids.add(Integer.parseInt(Integer.toBinaryString(currentChar), 2));
 		}
 	}
-	
 }
